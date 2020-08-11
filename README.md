@@ -35,7 +35,7 @@ The ConsistentHashing solution contains the following two projects:
 
 •	**ConsistentHashing** – A windows form project to visualize the process. System.Drawing namespace is used to graphically represent the hash space ring. 
  
- The ConsistentHashingLib projects needs to be added as reference to the ConsistentHashing project.
+ The ConsistentHashingLib project needs to be added as reference to the ConsistentHashing project.
  
 **Utility methods**
 
