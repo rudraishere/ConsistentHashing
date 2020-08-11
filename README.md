@@ -25,3 +25,21 @@ Three main methods are defined.
 **RemoveNode** – Removing a node from the hash space. Here, the first node on the ring after the node to be removed in the clockwise direction is identified as the target node. Now we simply reassign the keys belonging to the removed node to the target node. Finally, the node in question is removed from the hash space. As before, rest of the keys in the hash space remains unimpacted. Only the keys assigned to the node to be removed is affected.
  
 **AddKey** – Adding a new key to the hash space. We start by calculating the hash value and ring position of the current key. We identify the node in the hash space that is strictly greater than the current key ring position. As per design, this node happens to be the first node in clockwise direction from the current key ring position.  We assign the current key to this node.
+
+
+# Solution structure, utilities and testing 
+
+The ConsistentHashing solution contains the following two projects:
+
+•	**ConsistentHashingLib** – The actual implementation of the consistent hashing algorithm. This a .net library project. 
+
+•	**ConsistentHashing** – A windows form project to visualize the process. System.Drawing namespace is used to graphically represent the hash space ring. 
+ 
+ The ConsistentHashingLib projects needs to be added as reference to the ConsistentHashing project.
+ 
+**Utility methods**
+
+•	SearchNodes is a slightly modified binary search utility. Based on a Boolean parameter, it returns the exact match/strictly larger or strictly smaller node from a sorted list of nodes. 
+
+•	SetNodes is a utility method which arranges a collection of given node and data keys into a dictionary collection of nodes and assigned keys as a preset for the subsequent operations. The arrangement of nodes can be random or equally spaced.   
+
