@@ -18,7 +18,7 @@ namespace ConsistentHashingNs
         {
             InitializeComponent();
         }
-        private List<string> data = new List<string>
+        private List<string> data = new List<string> // data keys 
         {
             "6EZ4bsIPhy",
             "vVeDjw3zSw",
@@ -53,7 +53,7 @@ namespace ConsistentHashingNs
             //"71BsbEOVqb",
             //"RofzcgGLVA",
         };
-        private List<string> nodes = new List<string>
+        private List<string> nodes = new List<string> // Node keyss
         {
             "RUDYTEST01",
             "RUDYTEST02",
@@ -79,10 +79,12 @@ namespace ConsistentHashingNs
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             // Set data
-            _csObj = new ConsistentHashing(nodes,data, _nodeSpaceSize, NodeSpacing.Equidistant);
+            _csObj = new ConsistentHashing(nodes, data, _nodeSpaceSize, NodeSpacing.Equidistant);
             _csObj.SetNodes();
+            //Use this section to call the node operations
             //_csObj.AddNode("GGHSRTDF34");
             //_csObj.RemoveNode("RUDYTEST10");
+
             // Draw a circle.
             float cx = 850 / 2f;
             float cy = 850 / 2f;
