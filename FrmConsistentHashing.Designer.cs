@@ -1,6 +1,6 @@
 ﻿namespace ConsistentHashingNs
 {
-    partial class Form1
+    partial class FrmConsistentHashing
     {
         /// <summary>
         /// Required designer variable.

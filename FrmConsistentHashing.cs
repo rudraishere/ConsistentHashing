@@ -12,9 +12,9 @@ using ConsistentHashingLib;
 
 namespace ConsistentHashingNs
 {
-    public partial class Form1 : Form
+    public partial class FrmConsistentHashing : Form
     {
-        public Form1()
+        public FrmConsistentHashing()
         {
             InitializeComponent();
         }
