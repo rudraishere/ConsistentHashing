@@ -75,7 +75,7 @@ namespace ConsistentHashingNs
         private int _nodeSpaceSize = 360; // low value will have less crowded node and data labels
         private ConsistentHashing _csObj;
         
-        private void Form1_Paint(object sender, PaintEventArgs e)
+        private void FrmConsistentHashing_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             // Set data
